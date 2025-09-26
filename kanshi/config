@@ -1,0 +1,22 @@
+output eDP-1 {
+  mode 1920x1080@60.00
+  position 0,0
+  scale 1
+  alias $Laptop
+}
+
+output "Hewlett Packard HP LP2275w CNC8250G1V" {
+  mode 1680x1050@59.95
+  position 1920,0
+  scale 1
+  alias $Home_1
+}
+
+profile {
+	output $Laptop enable
+}
+
+profile {
+	output $Laptop disable
+	output $Home_1 enable
+}
