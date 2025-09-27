@@ -17,10 +17,16 @@ go/
 dconf/
 btop/
 nvim/
-dolphinrc
+Pinta/
+nautilus/
+xsettingsd/
 filetypesrc
 mimeapps.list
 pavucontrol.ini
 QtProject.conf
 trashrc
 baloofileinformationrc
+okularpartrc
+okularrc
+user-dirs.*
+
