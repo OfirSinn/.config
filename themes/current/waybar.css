@@ -29,6 +29,8 @@ window#waybar {
 #network:hover,
 #backlight:hover,
 #battery:hover,
+#battery.charging:hover,
+#battery.plugged:hover,
 #power-profiles-daemon.power-saver:hover,
 #power-profiles-daemon.performance:hover,
 #power-profiles-daemon.balanced:hover,
