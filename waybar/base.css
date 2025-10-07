@@ -98,6 +98,7 @@ button:hover {
 #wireplumber,
 #custom-media,
 #tray,
+#bluetooth,
 #mode,
 #idle_inhibitor,
 #scratchpad,
@@ -333,4 +334,8 @@ label:focus {
 
 #privacy-item.audio-out {
     background-color: #0069d4;
+}
+
+#bluetooth, #bluetooth.connected, #bluetooth.discoverable, #bluetooth.discovering{
+    background-color: #2980b9;
 }

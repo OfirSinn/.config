@@ -19,10 +19,12 @@
     "modules-right": [
         //"mpd",
         //"idle_inhibitor",
+	"bluetooth",
         "network",
         "power-profiles-daemon",
         "pulseaudio",
         "backlight",
+	//"tray",
         //"cpu",
         //"memory",
         //"temperature",
@@ -30,12 +32,11 @@
         "battery"
         //"clock"
         //"custom/power"
-	// add bluetooth TODO
     ],
     "hyprland/workspaces": {
 	"format": "{name}",
        "persistent-workspaces": {
-             "*": [1,2,3,4,5], // 5 workspaces by default on every monitor
+             "*": [1], // 5 workspaces by default on every monitor
              "HDMI-A-1": 3 // but only three on HDMI-A-1
        }
     },
@@ -75,8 +76,9 @@
     "tray": {
         // "icon-size": 21,
         "spacing": 10,
-        // "icons": {
-        //   "blueman": "bluetooth",
+         "icons": {
+           "blueman": "bluetooth"
+	}
         //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
         // }
     },
@@ -176,4 +178,16 @@
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
+    "bluetooth": {
+        "format": "",
+        "format-disabled": "", // an empty format will hide the module
+        "format-connected": " {device_alias}",
+        //"format-connected-battery": " {device_battery_percentage}%",
+        // "format-device-preference": [ "device1", "device2" ], // preference list deciding the displayed device
+        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+        "on-click": "blueman-manager"
+    }
 }

@@ -18,6 +18,9 @@ case "$1" in
   "Hebrew")
 	hyprctl switchxkblayout current 1
     ;;
+  "German")
+	hyprctl switchxkblayout current 2
+    ;;
   *)
     echo "Unknown layout: $1" >&2
     exit 1

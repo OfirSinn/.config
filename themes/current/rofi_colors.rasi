@@ -21,6 +21,7 @@
     color2:   rgba(35,35,35,0.25);
     color3:   #FFFFFF;
     color4:   #424242;
+    color5:   #abbcda;
 
     background-color: @bg;
     text-color: @fg;
@@ -35,7 +36,7 @@
                             
     foreground:             @color3;
     foreground-alt:         @color4;
-    foreground-selected:    @white;
+    foreground-selected:    @color5;
     foreground-active:      @white;
     foreground-urgent:      @white;
                             
