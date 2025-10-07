@@ -24,7 +24,16 @@ window#waybar {
     background-color: transparent;
     color: @color5;
 }
-#pulseaudio:hover {
+
+#pulseaudio:hover, 
+#network:hover,
+#backlight:hover,
+#battery:hover,
+#power-profiles-daemon.power-saver:hover,
+#power-profiles-daemon.performance:hover,
+#power-profiles-daemon.balanced:hover,
+#bluetooth:hover
+{
     background-color: @color2;
 }
 
@@ -73,7 +82,7 @@ window#waybar {
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background-color: @color2;
 }
 
 #workspaces button.focused {
