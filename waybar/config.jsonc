@@ -29,17 +29,28 @@
         //"memory",
         //"temperature",
         //"sway/language",
+	"hyprland/language",
         "battery"
         //"clock"
         //"custom/power"
     ],
+
     "hyprland/workspaces": {
 	"format": "{name}",
-       "persistent-workspaces": {
-             "*": [1], // 5 workspaces by default on every monitor
-             "HDMI-A-1": 3 // but only three on HDMI-A-1
-       }
+	"persistent-workspaces": {
+	    "*": [1,2,3,4,5], // 5 workspaces by default on every monitor
+	    "HDMI-A-1": 3 // but only three on HDMI-A-1
+	},
+	"show-special": true
     },
+
+	"hyprland/language": {
+		"format": "{}",
+		"format-en": "EN",
+		"format-de": "DE",
+		"format-he": "HE",
+	},
+
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
         "format-disconnected": "Disconnected ",

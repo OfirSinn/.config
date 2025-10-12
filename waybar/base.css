@@ -68,8 +68,8 @@ button:hover {
 }
 
 #workspaces button.focused {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    /* background-color: #64727D; */
+    /* box-shadow: inset 0 -3px #ffffff; */
 }
 
 #workspaces button.urgent {
@@ -338,4 +338,9 @@ label:focus {
 
 #bluetooth, #bluetooth.connected, #bluetooth.discoverable, #bluetooth.discovering{
     background-color: #2980b9;
+}
+
+#language{
+	background-color: #334455;
+	color: #ffffff;
 }
