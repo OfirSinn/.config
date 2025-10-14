@@ -6,5 +6,7 @@ gtk(nautilus, zotero, vial, bluetooth, network, other) - Prefer dark
 qt(peazip) - Prefer dark
 spicetify - dribbish
 
+tmux_colors - fg and bg reverse of kitty
+
 -[] btop
 -[] kitty
