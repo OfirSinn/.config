@@ -1,29 +1,38 @@
 #!/bin/bash
 
-# Hyprland-compatible im-select
+kbd1="kbdcraft-adam0110"
+kbd2="at-translated-set-2-keyboard"
 
-# kbd=$(hyprctl devices -j | jq -r '.keyboards[7].active_keymap')
+connected_keyboards=$(hyprctl devices -j | jq -r '.keyboards[].name')
 
-if [ -z "$1" ]; then
-    # Just print the currently active keymap name
-	hyprctl devices -j | jq -r '.keyboards[7] | .active_keymap'
-	exit 0
+# Determine which keyboard to use for reporting or switching
+if grep -Fxq "$kbd1" <<< "$connected_keyboards"; then
+  selected_kbd="$kbd1"
+elif grep -Fxq "$kbd2" <<< "$connected_keyboards"; then
+  selected_kbd="$kbd2"
+else
+  echo "No valid keyboard detected." >&2
+  exit 1
 fi
 
-# Set layout by name instead of hardcoding index
-case "$1" in
-	"English (US)")
-	hyprctl switchxkblayout current 0
-    ;;
-  "Hebrew")
-	hyprctl switchxkblayout current 1
-    ;;
-  "German")
-	hyprctl switchxkblayout current 2
-    ;;
-  *)
-    echo "Unknown layout: $1" >&2
-    exit 1
-    ;;
-esac
+if [ -z "$1" ]; then
+  # Print only the active layout of the selected keyboard
+  hyprctl devices -j | jq -r --arg kbd "$selected_kbd" '.keyboards[] | select(.name==$kbd) | .active_keymap'
+  exit 0
+fi
 
+# Layout map (update as needed)
+declare -A layouts=(
+  ["English (US)"]=0
+  ["Hebrew"]=1
+  ["German"]=2
+)
+
+layout_index="${layouts[$1]}"
+if [ -z "$layout_index" ]; then
+  echo "Unknown layout: $1" >&2
+  exit 1
+fi
+
+# Switch layout for current input device
+hyprctl switchxkblayout current "$layout_index"
