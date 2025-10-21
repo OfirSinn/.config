@@ -1,8 +1,15 @@
-@define-color color1 #000000;
-@define-color color2 rgba(66, 65, 83, 0.5); /* #42415380 */
-@define-color color3 #999999;
-@define-color color4 #cccccc;
-@define-color color5 #ffffff;
-@define-color color6 #abbcda;
-@define-color color7 #663399;
-@define-color color8 rgba(1, 131, 255, 0.30);
+@define-color misc #663399; /* misc (e.g button.visible) */
+
+@define-color foreground #cdd6f4; /* workspace-not-empty, regular text/symbol */
+@define-color background rgb(30, 30, 46); /* background-color, hover */
+@define-color background-half rgba(30, 30, 46, 0.9); /* background-color, hover */
+
+@define-color mark-background #89b4fa;
+@define-color mark-foreground rgb(30, 30, 46); /* workspace-active-text */
+@define-color hover-background #b4befe;
+@define-color hover-foreground rgb(30, 30, 46);
+@define-color subtext #a6adc8; /* workspace-empty */
+
+@define-color ping #fab387; /* discovery bt */
+@define-color critical #f38ba8; /*critical battery, urgent workspace */
+@define-color positive #a6e3a1; /* bt connect */

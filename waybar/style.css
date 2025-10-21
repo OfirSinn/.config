@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-    background-color: @color2;
+    background-color: @background-half;
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -34,27 +34,32 @@ button:hover {
 }
 
 #workspaces button {
-    transition: 0.2s ease-in-out;
+    transition: none;
     padding: 0 5px;
     background-color: transparent;
-    color: @color5;
-    border-radius: 0px;
+    color: @foreground;
 }
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: @critical;
 }
 #workspaces button.empty {
-    color: @color3;
+    color: @subtext;
 }
 #workspaces button.visible {
-    background-color: @color7;
+    background-color: @misc;
 }
 #workspaces button.active{
-    background-color: @color4;
-    color: @color1;
+    background-color: @mark-background;
+    color: @mark-foreground;
+}
+#workspaces button.active:hover{
+    color: @hover-foreground;
 }
 #workspaces button:hover {
-    background-color: @color2;
+    background-color: @hover-background;
+    color: @hover-foreground;
+    box-shadow: inherit;
+    text-shadow: inherit;
 }
 
 #mode {
@@ -103,9 +108,10 @@ button:hover {
 #power-profiles-daemon.balanced,
 #power-profiles-daemon.power-saver,
 #clock,
-#language {
+#language,
+#bluetooth {
     background-color: transparent;
-    color: @color5;
+    color: @foreground;
 }
 
 #pulseaudio:hover, 
@@ -117,15 +123,13 @@ button:hover {
 #power-profiles-daemon.power-saver:hover,
 #power-profiles-daemon.performance:hover,
 #power-profiles-daemon.balanced:hover,
-#bluetooth:hover, #language:hover
+#bluetooth:hover, #language:hover,
+#bluetooth.connected:hover
 {
-    background-color: @color2;
+    background-color: @hover-background;
+    color: @hover-foreground;
 }
 
-
-#bluetooth{
-    background-color: transparent;
-}
 #bluetooth.connected{
    background-color: transparent;
    animation-name: glow-green;
@@ -135,16 +139,18 @@ button:hover {
 }
 @keyframes glow-green {
     0% {
-        color: @color5;
+        color: @foreground;
     }
     30% {
-        color: rgba(91, 234, 115, 0.65);
+        color: @positive;
+	opacity: 0.65;
     }
     60% {
-        color: rgba(91, 234, 115, 1);
+        color: @positive;
+	opacity: 1;
     }
     100% {
-        color: @color5;
+        color: @foreground;
     }
 }
 #bluetooth.discovering{
@@ -155,24 +161,25 @@ button:hover {
 }
 @keyframes glow-orange {
     0% {
-        color: @color5;
+        color: @foreground;
     }
     30% {
-        color: rgba(234, 174, 91, 0.65);
+        color: @ping;
+	opacity: 0.65;
     }
     60% {
-        color: rgba(234, 174, 91, 1);
+        color: @ping;
+	opacity: 1;
     }
     100% {
-        color: @color5;
+        color: @foreground;
     }
 }
 
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
+    background-color: @critical;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
@@ -182,8 +189,8 @@ button:hover {
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
-        color: #000000;
+        background-color: @background-half;
+        color: @foreground;
     }
 }
 
