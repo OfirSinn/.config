@@ -1,75 +1,32 @@
-/***************************************************
- * Name:    Default Colors
- * Author:  Me
- * Date:    2024-09-28
- ***************************************************/
-
-/* Comment */
-
 * {
-    /***** [ Colors ] *****/
-
-    /* don't delete these colors */
-
-    white:      #ffffff; 
-    black:      #000000;
-    red:        #ff0000;
-
-    /***** [ Custom Colors ] *****/
-
-    color1:   rgba(21,21,21,0.25);
-    color2:   rgba(35,35,35,0.25);
-    color3:   #FFFFFF;
-    color4:   #424242;
-    color5:   #abbcda;
-
-    background-color: @bg;
-    text-color: @fg;
-
-    /***** [ Elements ] *****/ 
-
-    background:             @color1;
-    background-alt:         @color2;
-    background-selected:    @white;
-    background-active:      @white;
-    background-urgent:      @white;
-                            
-    foreground:             @color3;
-    foreground-alt:         @color4;
-    foreground-selected:    @color5;
-    foreground-active:      @white;
-    foreground-urgent:      @white;
-                            
-    background-color:       @color1;
-    text-color:             @color3;
-    border-color:           @white;
-    separator-color:        @white;
-    normal:                 @white;
-    selected:               @white;
-    active:                 @white;
-    urgent:                 @white;
-
-    /***** [ Aliases ] *****/
-
-    /* DO NOT TOUCH HERE */
-
-    bg: @background;
-    bg-alt: @background-alt;
-    bg-sel: @background-selected;
-    bg-act: @background-active; 
-    bg-urg: @background-urgent; 
-
-    fg: @foreground;
-    fg-alt: @foreground-alt;
-    fg-sel: @foreground-selected;
-    fg-act: @foreground-active; 
-    fg-urg: @foreground-urgent;
-
-    sel: @selected;
-    act: @active;
-    urg: @urgent;
-    text: @text-color;
-    txt: @text-color;
-    border: @border-color;
-    separator: @separator-color;
+    active-foreground:           rgba (166, 227, 161, 100 % ); /* easy change */
+    active-background:           transparent;
+    alternate-normal-foreground: var(foreground);
+    alternate-normal-background: transparent;
+    alternate-active-foreground: var(active-foreground);
+    alternate-active-background: transparent;
+    alternate-urgent-foreground: var(urgent-foreground);
+    alternate-urgent-background: transparent;
+    foreground:                  rgba (205, 214, 244, 100 % ); /* easy change */
+    background:                  rgba (30, 30, 46, 93 % ); /* easy change */
+    normal-foreground:           var(foreground);
+    normal-background:           transparent;
+    urgent-foreground:           rgba ( 249, 38, 114, 100 % );
+    urgent-background:           transparent;
+    selected-normal-foreground:  rgba ( 248, 248, 242, 100 % );
+    selected-normal-background:  rgba (147, 153, 178, 15 % ); /* easy change */
+    selected-active-foreground:  rgba ( 166, 227, 161, 100 % ); /* easy change */
+    selected-active-background:  var(selected-normal-background); /* easy change */
+    selected-urgent-foreground:  rgba ( 248, 248, 242, 100 % );
+    selected-urgent-background:  rgba ( 249, 38, 114, 100 % );
+    red:                         rgba ( 220, 50, 47, 100 % );
+    blue:                        rgba ( 38, 139, 210, 100 % );
+    lightfg:                     rgba ( 88, 104, 117, 100 % );
+    lightbg:                     rgba ( 238, 232, 213, 100 % );
+    separatorcolor:              rgba ( 69, 71, 90, 100 % ); /* easy change */
+    background-color:            transparent;
+    border-color: #b4befe; /* easy change */
+    placeholder-color: #a6adc8; /* easy change */
+    spacing:                     2;
+    window-width: 600px;
 }

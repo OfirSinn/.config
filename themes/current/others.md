@@ -1,4 +1,4 @@
-Obsidian theme - things, or atom.
+Obsidian theme - anupuccin - mocha - blue accent
 neovim theme - onedark - darker.
 rofi theme - material (window width 480px) - rofi_colors.rafi
 zen-browser - custom

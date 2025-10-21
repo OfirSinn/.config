@@ -15,6 +15,8 @@ configuration {
 		display-name: "";
 	}
 	location: 0;
+	scroll-method: 1;
+	icon-theme: "Adwaita";
 	//y-offset: -50;
 /*	location: 0;*/
 /*	yoffset: 0;*/
