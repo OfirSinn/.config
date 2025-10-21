@@ -1,14 +1,6 @@
 // -*- mode: jsonc -*-
 {
-    // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 16, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
-    //"margin-top": 8,
-    //"margin-right":8,
-    //"margin-left":8,
-    //"spacing": 4, // Gaps between modules (4px)
-    // Choose the order of the modules
     "modules-center": [
 	"clock"
     ],
@@ -17,22 +9,13 @@
      "custom/media"
     ],
     "modules-right": [
-        //"mpd",
-        //"idle_inhibitor",
 	"bluetooth",
         "network",
         "power-profiles-daemon",
         "pulseaudio",
         "backlight",
-	//"tray",
-        //"cpu",
-        //"memory",
-        //"temperature",
-        //"sway/language",
 	"hyprland/language",
         "battery"
-        //"clock"
-        //"custom/power"
     ],
 
     "hyprland/workspaces": {
@@ -51,68 +34,11 @@
 		"format-he": "HE",
 	},
 
-    "mpd": {
-        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-        "format-disconnected": "Disconnected ",
-        "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-        "unknown-tag": "N/A",
-        "interval": 5,
-        "consume-icons": {
-            "on": " "
-        },
-        "random-icons": {
-            "off": "<span color=\"#f53c3c\"></span> ",
-            "on": " "
-        },
-        "repeat-icons": {
-            "on": " "
-        },
-        "single-icons": {
-            "on": "1 "
-        },
-        "state-icons": {
-            "paused": "",
-            "playing": ""
-        },
-        "tooltip-format": "MPD (connected)",
-        "tooltip-format-disconnected": "MPD (disconnected)"
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
-    "tray": {
-        // "icon-size": 21,
-        "spacing": 10,
-         "icons": {
-           "blueman": "bluetooth"
-	}
-        //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
-        // }
-    },
     "clock": {
         // "timezone": "America/New_York",
 	"format": "{:%H:%M %d-%m-%Y}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         //"format-alt": "{:%Y-%m-%d}"
-    },
-    "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false
-    },
-    "memory": {
-        "format": "{}% "
-    },
-    "temperature": {
-        // "thermal-zone": 2,
-        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        "critical-threshold": 80,
-        // "format-critical": "{temperatureC}°C {icon}",
-        "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
     },
     "backlight": {
         // "device": "acpi_video1",
