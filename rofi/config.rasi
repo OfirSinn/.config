@@ -186,4 +186,4 @@ configuration {
   }
 }
 
-@theme ".config/rofi/current.rasi"
+@theme "~/.config/rofi/current.rasi"

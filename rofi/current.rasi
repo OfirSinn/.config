@@ -1,4 +1,4 @@
-@import ".config/themes/current/rofi_colors.rasi"
+@import "~/.config/themes/current/rofi_colors.rasi"
 window {
     padding:          5;
     background-color: var(background);
