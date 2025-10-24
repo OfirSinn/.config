@@ -1,8 +1,7 @@
 @define-color misc #663399; /* misc (e.g button.visible) */
 
 @define-color foreground #cdd6f4; /* workspace-not-empty, regular text/symbol */
-@define-color background rgb(30, 30, 46); /* background-color, hover */
-@define-color background-half rgba(30, 30, 46, 0.9); /* background-color, hover */
+@define-color background rgba(30, 30, 46, 0.5); /* background-color, hover */
 
 @define-color mark-background #89b4fa;
 @define-color mark-foreground rgb(30, 30, 46); /* workspace-active-text */

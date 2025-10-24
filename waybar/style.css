@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-    background-color: @background-half;
+    background-color: @background;
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -189,7 +189,7 @@ button:hover {
 
 @keyframes blink {
     to {
-        background-color: @background-half;
+        background-color: @background;
         color: @foreground;
     }
 }
