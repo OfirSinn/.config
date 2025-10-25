@@ -12,3 +12,8 @@
 @define-color ping #fab387; /* discovery bt */
 @define-color critical #f38ba8; /*critical battery, urgent workspace */
 @define-color positive #a6e3a1; /* bt connect */
+
+@define-color workspace-default transparent;
+@define-color this-monitor rgba(137, 180, 250, 0.4);
+@define-color mark-background-two rgba(249, 226, 175, 0.8);
+@define-color mark-foreground-two rgb(30, 30, 46);

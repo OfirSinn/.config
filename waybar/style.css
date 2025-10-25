@@ -36,19 +36,24 @@ button:hover {
 #workspaces button {
     transition: none;
     padding: 0 5px;
-    background-color: transparent;
+    background-color: @workspace-default;
     color: @foreground;
 }
 #workspaces button.urgent {
     background-color: @critical;
 }
+#workspaces button.visible.hosting-monitor{
+	color: @mark-foreground-two;
+	background-color: @mark-background-two;
+}
+#workspaces button.hosting-monitor {
+    background-color: @this-monitor;
+}
 #workspaces button.empty {
     color: @subtext;
+    background-color: @workspace-default;
 }
-#workspaces button.visible {
-    background-color: @misc;
-}
-#workspaces button.active{
+#workspaces button.active.hosting-monitor {
     background-color: @mark-background;
     color: @mark-foreground;
 }

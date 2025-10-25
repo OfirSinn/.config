@@ -1,15 +1,29 @@
 output eDP-1 {
   mode 1920x1080@60.00
-  position 0,0
+  position -250,1050
   scale 1
   alias $Laptop
 }
 
 output "Hewlett Packard HP LP2275w CNC8250G1V" {
   mode 1680x1050@59.95
-  position 1920,0
+  position 0,0
   scale 1
   alias $Home_1
+}
+
+output "Hewlett Packard HP LP2275w CNC8250G1W" {
+  mode 1680x1050@59.95
+  position 1680,20
+  scale 1
+  alias $Home_2
+}
+
+output "DLOGIC Ltd. No Monitor USB_433f-4551" {
+  mode 1680x1050@59.95
+  position 1680,20
+  scale 1
+  alias $Home_2_alt
 }
 
 profile {
@@ -19,4 +33,16 @@ profile {
 profile {
 	output $Laptop disable
 	output $Home_1 enable
+}
+
+profile {
+	output $Laptop disable
+	output $Home_1 enable
+	output $Home_2 enable
+}
+
+profile {
+	output $Laptop disable
+	output $Home_1 enable
+	output $Home_2_alt enable
 }
