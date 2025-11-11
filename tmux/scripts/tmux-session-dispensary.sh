@@ -3,7 +3,7 @@
 DIRS=(
     "$HOME/repos/"
     "$HOME/.config/"
-    "$HOME/Documents/Snakes_sce/"
+    "$HOME/Documents/Projects/"
     "$HOME"
 )
 
