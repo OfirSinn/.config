@@ -14,14 +14,14 @@ output "Hewlett Packard HP LP2275w CNC8250G1V" {
 
 output "Hewlett Packard HP LP2275w CNC8250G1W" {
   mode 1680x1050@59.95
-  position 1680,20
+  position 1680,-355
   scale 1
   alias $Home_2
 }
 
 output "DLOGIC Ltd. No Monitor USB_433f-4551" {
   mode 1680x1050@59.95
-  position 1680,20
+  position 1680,-355
   scale 1
   alias $Home_2_alt
 }

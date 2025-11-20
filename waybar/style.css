@@ -47,7 +47,7 @@ button:hover {
 	background-color: @mark-background-two;
 }
 #workspaces button.hosting-monitor {
-    background-color: @this-monitor;
+    background-color: @workspace-default;
 }
 #workspaces button.empty {
     color: @subtext;

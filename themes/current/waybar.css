@@ -7,7 +7,8 @@
 @define-color mark-foreground rgb(30, 30, 46); /* workspace-active-text */
 @define-color hover-background #b4befe;
 @define-color hover-foreground rgb(30, 30, 46);
-@define-color subtext #a6adc8; /* workspace-empty */
+@define-color subtext #45475a; /* workspace-empty */
+/* @define-color subtext #a6adc8;  */
 
 @define-color ping #fab387; /* discovery bt */
 @define-color critical #f38ba8; /*critical battery, urgent workspace */
