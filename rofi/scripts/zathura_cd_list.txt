@@ -1,0 +1,7 @@
+~/Documents/Notes/2026a/Random_Signals/
+~/Documents/Notes/2026a/DSP/
+~/Documents/Notes/2026a/Wave_Transmission_Lines/
+~/Documents/Projects/Snakes_sce/snakedocs/
+~/Documents/Exports/
+~/Documents/Notes/2026a/DSP & RS Project/
+

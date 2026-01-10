@@ -10,7 +10,7 @@
      //"wlr/taskbar"
     ],
     "modules-right": [
-	//"tray",
+	"tray",
 	"bluetooth",
         "network",
         "power-profiles-daemon",

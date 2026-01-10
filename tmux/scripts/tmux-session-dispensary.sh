@@ -4,13 +4,14 @@ DIRS=(
     "$HOME/repos/"
     "$HOME/.config/"
     "$HOME/Documents/Projects/"
+    "$HOME/Documents/Notes/2026a/"
     "$HOME"
 )
 
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find "${DIRS[@]}" -maxdepth 1 -type d \
+    selected=$(find "${DIRS[@]}" -maxdepth 2 -type d \
         | sed "s|^$HOME/||" \
         | sk --margin 10% --color="bw")
 

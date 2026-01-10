@@ -43,21 +43,27 @@ button:hover {
     background-color: @critical;
 }
 #workspaces button.visible.hosting-monitor{
+	/* the workspace on the second unselected monitor that is active */
+	/* only visible on the second monitor */
 	color: @mark-foreground-two;
 	background-color: @mark-background-two;
 }
 #workspaces button.hosting-monitor {
-    background-color: @workspace-default;
+	/* this is the elements of the host monitor exluding the second monitor */
+    background-color: @this-monitor;
 }
 #workspaces button.empty {
+	/* emtpy workspaces, on all monitors */
     color: @subtext;
     background-color: @workspace-default;
 }
 #workspaces button.active.hosting-monitor {
+	/* the workspace on the first selected monitor that is active */
     background-color: @mark-background;
     color: @mark-foreground;
 }
 #workspaces button.active:hover{
+	/* might be usless */
     color: @hover-foreground;
 }
 #workspaces button:hover {
@@ -204,7 +210,8 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+	color: @foreground;
+	background-color: @background;
 }
 
 #tray > .passive {

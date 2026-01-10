@@ -4,6 +4,12 @@ output eDP-1 {
   scale 1
   alias $Laptop
 }
+output "Dell Inc. DELL U2725QE 6N26484" {
+	mode 3840x2160@60 
+	position 1670,0
+	scale 1.5
+	alias $Inon
+}
 
 output "Hewlett Packard HP LP2275w CNC8250G1V" {
   mode 1680x1050@59.95
@@ -45,4 +51,9 @@ profile {
 	output $Laptop disable
 	output $Home_1 enable
 	output $Home_2_alt enable
+}
+
+profile {
+	output $Laptop disable
+	output $Inon enable
 }
