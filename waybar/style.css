@@ -64,6 +64,7 @@ button:hover {
 }
 #workspaces button.active:hover{
 	/* might be usless */
+    background-color: @hover-background;
     color: @hover-foreground;
 }
 #workspaces button:hover {
@@ -125,6 +126,7 @@ button:hover {
     color: @foreground;
 }
 
+#clock:hover,
 #pulseaudio:hover, 
 #network:hover,
 #backlight:hover,

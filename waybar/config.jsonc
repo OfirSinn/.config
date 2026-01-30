@@ -40,6 +40,7 @@
         // "timezone": "America/New_York",
 	"format": "{:%d %H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+	"on-click": "kitty --class=menu.tui -e timr"
         //"format-alt": "{:%Y-%m-%d}"
     },
     "backlight": {
