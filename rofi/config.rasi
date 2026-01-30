@@ -21,7 +21,7 @@ configuration {
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
-/*	modes: "window,drun,run,ssh";*/
+	modes: "window,drun,system:~/.config/rofi/scripts/system_apps.sh,pdf:~/.config/rofi/scripts/zathura_mode.sh";
 /*	fixed-num-lines: true;*/
 /*	show-icons: false;*/
 /*	preview-cmd: ;*/
@@ -135,16 +135,16 @@ configuration {
 /*	kb-toggle-case-sensitivity: "grave,dead_grave";*/
 /*	kb-toggle-sort: "Alt+grave";*/
 /*	kb-cancel: "Escape,Control+g,Control+bracketleft";*/
-/*	kb-custom-1: "Alt+1";*/
-/*	kb-custom-2: "Alt+2";*/
-/*	kb-custom-3: "Alt+3";*/
-/*	kb-custom-4: "Alt+4";*/
-/*	kb-custom-5: "Alt+5";*/
-/*	kb-custom-6: "Alt+6";*/
-/*	kb-custom-7: "Alt+7";*/
-/*	kb-custom-8: "Alt+8";*/
-/*	kb-custom-9: "Alt+9";*/
-/*	kb-custom-10: "Alt+0";*/
+	kb-custom-1: "Alt+1";
+	kb-custom-2: "Alt+2";
+	kb-custom-3: "Alt+3";
+	kb-custom-4: "Alt+4";
+	kb-custom-5: "Alt+5";
+	kb-custom-6: "Alt+6";
+	kb-custom-7: "Alt+7";
+	kb-custom-8: "Alt+8";
+	kb-custom-9: "Alt+9";
+	kb-custom-10: "Alt+0";
 /*	kb-custom-11: "Alt+exclam";*/
 /*	kb-custom-12: "Alt+at";*/
 /*	kb-custom-13: "Alt+numbersign";*/
@@ -154,16 +154,16 @@ configuration {
 /*	kb-custom-17: "Alt+ampersand";*/
 /*	kb-custom-18: "Alt+asterisk";*/
 /*	kb-custom-19: "Alt+parenleft";*/
-/*	kb-select-1: "Super+1";*/
-/*	kb-select-2: "Super+2";*/
-/*	kb-select-3: "Super+3";*/
-/*	kb-select-4: "Super+4";*/
-/*	kb-select-5: "Super+5";*/
-/*	kb-select-6: "Super+6";*/
-/*	kb-select-7: "Super+7";*/
-/*	kb-select-8: "Super+8";*/
-/*	kb-select-9: "Super+9";*/
-/*	kb-select-10: "Super+0";*/
+	kb-select-1: "";
+	kb-select-2: "";
+	kb-select-3: "";
+	kb-select-4: "";
+	kb-select-5: "";
+	kb-select-6: "";
+	kb-select-7: "";
+	kb-select-8: "";
+	kb-select-9: "";
+	kb-select-10: "";
 /*	kb-entry-history-up: "Control+Up";*/
 /*	kb-entry-history-down: "Control+Down";*/
 /*	kb-matcher-up: "Super+equal";*/
@@ -187,3 +187,5 @@ configuration {
 }
 
 @theme "~/.config/rofi/current.rasi"
+
+// @theme "/usr/share/rofi/themes/material.rasi"
