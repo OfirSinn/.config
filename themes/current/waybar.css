@@ -2,8 +2,10 @@
 
 @define-color foreground #cdd6f4; /* workspace-not-empty, regular text/symbol */
 @define-color background rgba(30, 30, 46, 0.5); /* background-color, hover */
+@define-color border rgba(30, 30, 46, 0.3); /* background-color, hover */
 
-@define-color mark-background rgba(148, 226, 213, 0.4);
+/* @define-color mark-background rgba(148, 226, 213, 0.4); */
+@define-color mark-background rgba(137, 180, 250, 0.4);
 @define-color mark-foreground #cdd6f4; /* rgb(30, 30, 46);  workspace-active-text */
 @define-color hover-background rgba(180,190,254,0.4);
 @define-color hover-foreground #cdd6f4; /* rgb(30, 30, 46); */

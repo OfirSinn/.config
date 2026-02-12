@@ -13,6 +13,7 @@ window#waybar {
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
+    border-bottom: 2px solid @border;
 }
 
 window#waybar.hidden {
@@ -25,6 +26,11 @@ button {
     /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
+    border-bottom: 2px solid @border;
+}
+
+button.active {
+    border-bottom: 2px solid @foreground;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */

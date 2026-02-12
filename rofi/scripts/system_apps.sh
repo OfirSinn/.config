@@ -12,7 +12,7 @@ apps=(
     ["Sound"]="pavucontrol"
     ["Bluetooth"]="kitty --class=menu.tui -e bluetui"
     ["Clock / Timer"]="kitty --class=menu.tui -e timr"
-    ["Network"]="kitty --class=menu.tui -e impala"
+    ["Network / wifi"]="kitty --class=menu.tui -e impala"
     # Add more entries here if needed, example:
     # ["Calculator"]="rofi-calc"
 )

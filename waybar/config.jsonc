@@ -1,5 +1,6 @@
 // -*- mode: jsonc -*-
 {
+    "layer": "top",
     "height": 16, // Waybar height (to be removed for auto height)
     "modules-center": [
 	"clock"
