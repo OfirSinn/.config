@@ -44,6 +44,7 @@ button:hover {
     padding: 0 5px;
     background-color: @workspace-default;
     color: @foreground;
+    transition: none;
 }
 #workspaces button.urgent {
     background-color: @critical;
@@ -67,6 +68,11 @@ button:hover {
 	/* the workspace on the first selected monitor that is active */
     background-color: @mark-background;
     color: @mark-foreground;
+    animation-name: flash-active;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    transition: none;
 }
 #workspaces button.active:hover{
 	/* might be usless */
@@ -78,6 +84,15 @@ button:hover {
     color: @hover-foreground;
     box-shadow: inherit;
     text-shadow: inherit;
+}
+
+@keyframes flash-active {
+    from {
+        background-color: @foreground; /* Start Bright */
+    }
+    to {
+        background-color: @mark-background; /* Fade into Active Color */
+    }
 }
 
 #mode {

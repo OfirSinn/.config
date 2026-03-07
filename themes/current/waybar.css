@@ -7,7 +7,7 @@
 /* @define-color mark-background rgba(148, 226, 213, 0.4); */
 @define-color mark-background rgba(137, 180, 250, 0.4);
 @define-color mark-foreground #cdd6f4; /* rgb(30, 30, 46);  workspace-active-text */
-@define-color hover-background rgba(180,190,254,0.4);
+@define-color hover-background rgba(137, 180, 250, 0.4);/* rgba(180,190,254,0.4); */
 @define-color hover-foreground #cdd6f4; /* rgb(30, 30, 46); */
 @define-color subtext #45475a; /* workspace-empty */
 /* @define-color subtext #a6adc8;  */
